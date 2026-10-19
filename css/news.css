@@ -1,0 +1,46 @@
+.news-wrap{
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fit, minmax(300px , 1fr));     */    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+.news-wrap li{
+    width: calc((100% - 6%) / 4);
+    padding: 1%;
+    background-color: beige;
+}
+.pic{
+    position: relative;
+    /* height: 180px; */
+    aspect-ratio: 2 / 1.3;
+    overflow: hidden;
+}
+.pic img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* 
+    display: block;
+    width: 100%;    
+    */
+}
+.news-wrap li h3{
+    padding: 2% 0;
+    font-size: clamp(16px, 1vw, 18px);
+    overflow: hidden;
+    max-width: 180px;    
+    /* 한줄 말줄임 */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /* background-color: red; */
+}
+.news-wrap li p{
+    font-size: clamp(12px, 1vw, 16px);
+    /* 두줄 말줄임 */
+    overflow: hidden;
+    /* 여러말줄임 기능을 사용하기 위한 레이아웃 설정 */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;  /* 3줄 */
+    -webkit-box-orient: vertical;
+}

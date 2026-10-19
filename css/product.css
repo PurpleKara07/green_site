@@ -1,0 +1,23 @@
+.product{
+    background-color: #eee;
+}
+.product >.inner >p{
+    font-size: clamp(14px, 1vw, 16px);
+    margin-bottom: 2%;
+}
+.product .swiper-pagination{
+    bottom: 5% !important;
+    /* height: 10px !important; */
+    /* background-color: yellow; */
+}
+.swiper-button-next, .swiper-button-prev{
+    width: 45px;
+    height: 45px;
+    padding: 20px;
+    border-radius: 50%;
+    color: #fff !important;
+    background-color: #23534a;
+}
+.swiper-button-next::after, .swiper-button-prev::after{
+    font-size: 14px !important;
+}
